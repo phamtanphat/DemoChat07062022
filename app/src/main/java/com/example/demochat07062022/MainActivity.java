@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Socket mSocket;
     {
         try {
-            mSocket = IO.socket("http://192.168.1.3:3000");
+            mSocket = IO.socket("http://192.168.1.5:3000");
         } catch (URISyntaxException e) {}
     }
 
@@ -123,9 +123,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        signUp(new User("demo2@gmail.com", "1234567891"));
-//        signIn(new User("demo1@gmail.com", "123456789"));
-//        joinChatRoom();
+//        signUp(new User("demo2@gmail.com", "123456789"));
+//        signIn(new User("demo2@gmail.com", "123456789"));
+        joinChatRoom();
 //        chat("Xin chào");
 
         btnChat.setOnClickListener(new View.OnClickListener() {
